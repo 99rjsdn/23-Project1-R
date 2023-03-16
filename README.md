@@ -1,4 +1,6 @@
-3/9
+# 황영준
+
+## 3/9
 
 Git의 설치
 구글 검색 후 설치.
@@ -24,4 +26,19 @@ Remote에 Repository없을때 저장소 만들어줌. private public만 선택.(
 Github 연동.
 1. VS code 좌측 하단부 구름 아이콘 혹은 push 진행하며 연동해야함.
 
-3/16
+
+
+## 3/16
+
+R 언어
+
+R설치
+https://www.r-project.org/ 방문 후 cran 후 진행.
+
+R.studio 설치
+rstudio.com 방문 후 진행.
+
+R studio
+1. 소스, 콘솔, 환경 탭 등으로 구성.
+
+
