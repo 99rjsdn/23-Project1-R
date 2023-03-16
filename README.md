@@ -1,3 +1,5 @@
+3/9
+
 Git의 설치
 구글 검색 후 설치.
 
@@ -21,3 +23,5 @@ Remote에 Repository없을때 저장소 만들어줌. private public만 선택.(
 
 Github 연동.
 1. VS code 좌측 하단부 구름 아이콘 혹은 push 진행하며 연동해야함.
+
+3/16
