@@ -127,3 +127,10 @@ FALSE FALSE FALSE FALSE TRUE TRUE TRUE TRUE TRUE
     print(my_list$name) 하면 John boar
     print(my_list$hobby[2]) 하면 run
     print(my_list$address$city) 하면 SEOUL
+
+매트릭스
+1. 행과 열로 나뉜 2차원 배열
+2. cbind() 함수로 벡터를 매트릭스로 만들 수도, 매트릭스를 합칠 수도 있다.
+
+
+##4/6
