@@ -113,4 +113,17 @@ FALSE FALSE FALSE FALSE TRUE TRUE TRUE TRUE TRUE
        결과는 당연하게도 2 3 4 5 6
 1-3-3. sum() 함수 등에 사용가능 예를 들어 sum(d>5) TRUE 값 개수 반환함.
 1-3-4. length(d>5) 하게 되면 TRUE FALSE로 나뉘는 논리벡터가 됨. 그리고 그 갯수를 출력함.
-       
+
+팩터와 리스트
+1. 팩터 : 범주형 데이터 처리용 ex) gender =factor(c("male","female"))
+2. 리스트 : 여러가지 자료형 처리용
+    my_list <- list(
+        name = "John boar",
+        age = "30",
+        hobby = c('ski','run','ball'),
+        address = list(city="SEOUL",street="GEORI"
+        )
+    )
+    print(my_list$name) 하면 John boar
+    print(my_list$hobby[2]) 하면 run
+    print(my_list$address$city) 하면 SEOUL
