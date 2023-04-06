@@ -172,3 +172,19 @@ my_matrix <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3, byrow = TR
 3-3. 예시   > class(x) <- "integer" 
             > class(x)
             [1] "integer"
+
+4. is 객체 유형 검사 함수
+4-1.    > x <- 3.14
+        > is.numeric(x)
+        [1] TRUE
+    x의 변수는 숫자형 클래스의 인스턴스인가? TRUE
+
+5. print() 값 출력. ?print 명령어로 확인가능
+
+6. cat() 문자열 연속 출력시 사용하는 함수
+6-1. 여러개의 문자열 출력할 때 쉼표로 구분함.
+    > cat("Hello", "World!")
+    Hello World!
+
+7. getwd() 현재 작업 디렉토리 확인
+7-1. 현재 작업 디렉토리를 변경할 수도 있음
