@@ -128,9 +128,36 @@ FALSE FALSE FALSE FALSE TRUE TRUE TRUE TRUE TRUE
     print(my_list$hobby[2]) 하면 run
     print(my_list$address$city) 하면 SEOUL
 
+
 매트릭스
+
+my_matrix <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3, byrow = TRUE) 입력 후 실행하면 아래 매트릭스 생성됨
+
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+[3,]    7    8    9
+
 1. 행과 열로 나뉜 2차원 배열
+1-1. matrix(data = 데이터, nrow = 행, ncol = 열, byrow = 논리값,dimnames = 행과 열에 대한 이름을 나타내는 문자열 벡터 생략가능)
+1-2. 논리값 옵션은 TRUE : 데이터를 행 단위로 채우기.
+                  FALSE : 열 단위로 채우기
 2. cbind() 함수로 벡터를 매트릭스로 만들 수도, 매트릭스를 합칠 수도 있다.
 
 
 ##4/6
+
+매트릭스와 데이터프레임에 함수 적용
+1. apply(MARGIN,FUN,...) 데이터 선택 함수
+1-1. MARGIN 함수를 적용할 차원.
+1이면 함수를 행단위 2이면 함수를 열단위로 적용.
+1-2. FUN 함수
+1-3. 함수에 적용할 추가 인수 지정
+1-4. 예시 : apply(my_matrix, MARGIN = 1, FUN = sum)
+            [1]  6 15 24
+            실행시 MARGIN 1로 행으로 정렬된 데이터를 SUM 함수로 합친 결과가 나옴.
+2. 
+            
+
+
+
