@@ -148,7 +148,8 @@ my_matrix <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3, byrow = TR
 ##4/6
 
 매트릭스와 데이터프레임에 함수 적용
-1. apply(MARGIN,FUN,...) 데이터 선택 함수
+1. apply(X,MARGIN,FUN,...) 데이터 선택 함수
+1-0. X 행이나 열 같은 객체
 1-1. MARGIN 함수를 적용할 차원.
 1이면 함수를 행단위 2이면 함수를 열단위로 적용.
 1-2. FUN 함수
@@ -156,8 +157,18 @@ my_matrix <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3, byrow = TR
 1-4. 예시 : apply(my_matrix, MARGIN = 1, FUN = sum)
             [1]  6 15 24
             실행시 MARGIN 1로 행으로 정렬된 데이터를 SUM 함수로 합친 결과가 나옴.
-2. 
-            
 
+2. subset(X,subset,select,drop=FALSE, ... )  행 선택 함수
+2-1. X 데이터 프레임 객체 ex) 매트릭스
+2-2. subset 조건 제시해서 행 추출
+2-3. select 데이터프레임에서 원하는 열만 추출
+2-4. drop 열이 한개여도 데이터프레임으로 출력여부...
 
-
+3. class 클래스 확인(3-2예시)하거나 클래스(3-3예시) 설정
+3-1. 숫자는 numeric, 문자열은 character, 데이터프레임은 data.frame
+3-2. 예시   > x <- c(1, 2, 3)
+            > class(x)
+            [1] "numeric"
+3-3. 예시   > class(x) <- "integer" 
+            > class(x)
+            [1] "integer"
